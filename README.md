@@ -1,5 +1,6 @@
 <div align="center" id="top"> 
-  <img src="./.github/app.gif" alt="Logysto" />
+
+![API Image](https://github.com/mauriciosierrac/logysto/blob/master/apigps.jpg)
 
   &#xa0;
 
@@ -26,11 +27,11 @@
 
 <!-- Status -->
 
-<!-- <h4 align="center"> 
+<h4 align="center"> 
 	🚧  Logysto 🚀 Under construction...  🚧
 </h4> 
 
-<hr> -->
+<hr> 
 
 <p align="center">
   <a href="#dart-about">About</a> &#xa0; | &#xa0; 
@@ -46,7 +47,21 @@
 
 ## :dart: About ##
 
-Describe your project
+Caso de prueba LOGYSTO
+* Crear un API-REST usando nodejs y Express. En el cual se debe tener en cuenta un factor
+de autenticación (JWT). Se debe realizar los métodos correspondientes de este factor de
+autenticación (Login, Refresco, Registro), puede utilizar cualquier método para almacenar
+los datos
+* Se debe exponer un servicio que debe realizar la búsqueda de una dirección, el servicio
+debe retornar las coordenadas de dicha dirección.
+* Se debe tener en cuenta por lo menos dos proveedores de búsqueda de direcciones EJ:
+(Google, Tomtom, Here).
+* Los dos proveedores se utilizan con el fin de que, si la dirección no se encuentra en uno, se
+debe buscar en el otro.
+* Los métodos expuestos deben estar protegidos por JWT.
+* No es necesario hacer FRONT. Se puede usar herramientas como POSTMAN para el
+consumo de dichos servicios.
+
 
 ## :sparkles: Features ##
 
@@ -58,11 +73,7 @@ Describe your project
 
 The following tools were used in this project:
 
-- [Expo](https://expo.io/)
 - [Node.js](https://nodejs.org/en/)
-- [React](https://pt-br.reactjs.org/)
-- [React Native](https://reactnative.dev/)
-- [TypeScript](https://www.typescriptlang.org/)
 
 ## :white_check_mark: Requirements ##
 

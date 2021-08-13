@@ -1,0 +1,8 @@
+//GET https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=AIzaSyBtzJ6eC2fArNnfmZiNm67kZoq265qWkKQ
+POST http://localhost:4000/api/google HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYxMTY5MTVkYzM4YWEwMDkyYzdlNTkwNSIsIm5hbWUiOiJ1c2VyMDEiLCJlbWFpbCI6InVzZXIwMUBtYWlsLmNvbSIsInBhc3N3b3JkIjoiaG9sYW11bmRvIiwiX192IjowfSwiaWF0IjoxNjI4ODcyMTk3LCJleHAiOjE2Mjg5NTg1OTd9.mME4GCaQtG6-17qvQV5v7pELTOWEjj6gX6rDA49F2rc
+content-type: application/json
+
+{
+    "address": "carrera 27G N 72R 09"
+}

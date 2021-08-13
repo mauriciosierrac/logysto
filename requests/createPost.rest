@@ -1,7 +1,0 @@
-POST http://localhost:4000/api/post HTTP/1.1
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJub21icmUiOiJ1c2VyIiwiZW1haWwiOiJ1c2VyMDFAbWFpbC5jb20ifSwiaWF0IjoxNjI4Nzg3NDk3LCJleHAiOjE2Mjg4NzM4OTd9.sbC6nsDPNFce37CQH3yIJwPYITx8Ryv957vlhjPNFp0
-content-type: application/json
-
-{
-    "address": "calle 43 N22 q 34"
-}

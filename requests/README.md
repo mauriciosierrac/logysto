@@ -1,5 +1,6 @@
 <div align="center" id="top"> 
   
+  ![logo](https://github.com/mauriciosierrac/logysto/blob/master/requests/img/pluggin.jpg)
 
   &#xa0;
 
@@ -58,11 +59,8 @@ Pruebas de peticiones GET y POST a los endpoint definidos, mediante el plugin pa
 
 The following tools were used in this project:
 
-- [Expo](https://expo.io/)
-- [Node.js](https://nodejs.org/en/)
-- [React](https://pt-br.reactjs.org/)
-- [React Native](https://reactnative.dev/)
-- [TypeScript](https://www.typescriptlang.org/)
+- [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)
+
 
 ## :white_check_mark: Requirements ##
 
@@ -71,20 +69,27 @@ Before starting :checkered_flag:, you need to have [REST Client](https://marketp
 ## :checkered_flag: Starting ##
 
 ```bash
-# Clone this project
-$ git clone https://github.com/mauriciosierrac/logysto
+# install the REST CLIENT pluggin in your Visual Studio Code editor
 
-# Access
-$ cd logysto
+push the Send Request Otion
 
-# Install dependencies
-$ yarn
-
-# Run the project
-$ yarn start
-
-# The server will initialize in the <http://localhost:3000>
 ```
+
+## :white_check_mark: Server Online ##
+
+![server](https://github.com/mauriciosierrac/logysto/blob/master/requests/img/serverOnLine.JPG)
+
+## :white_check_mark: Create User ##
+
+![create user](https://github.com/mauriciosierrac/logysto/blob/master/requests/img/nuevoUser.JPG)
+
+## :white_check_mark: Get Token ##
+
+![get token](https://github.com/mauriciosierrac/logysto/blob/master/requests/img/getToken.JPG)
+
+## :white_check_mark: Find Address ##
+
+![find addreess](https://github.com/mauriciosierrac/logysto/blob/master/requests/img/findAddress.JPG)
 
 ## :memo: License ##
 

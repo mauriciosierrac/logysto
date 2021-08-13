@@ -1,0 +1,2 @@
+//GET https://api.tomtom.com/search/2/search/calle%2048%2012%20e%2038.json?lat=37.337&lon=-121.89&key=*****
+GET https://api.tomtom.com/search/2/search/calle%2048%2012%20e%2038.json?lat=37.337&lon=-121.89&key=1A6jPSfxQ0Eu4dsgM7m26DUMxo9tEa3p

@@ -65,15 +65,16 @@ consumo de dichos servicios.
 
 ## :sparkles: Features ##
 
-:heavy_check_mark: Feature 1;\
-:heavy_check_mark: Feature 2;\
-:heavy_check_mark: Feature 3;
+:heavy_check_mark: Json Web Token Authentication\
+:heavy_check_mark: API rest;\
+:heavy_check_mark: Address lookup;
 
 ## :rocket: Technologies ##
 
 The following tools were used in this project:
 
 - [Node.js](https://nodejs.org/en/)
+- [JWT](https://jwt.io/)
 
 ## :white_check_mark: Requirements ##
 

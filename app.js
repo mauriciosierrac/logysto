@@ -1,8 +1,13 @@
 const express = require('express')
 const jwt = require('jsonwebtoken')
+const fetch = require('node-fetch')
+const bodyParser = require('body-parser')
 
 const app = express()
 
+//definimos nuestras heramientas a usar, para el manejo de json
+app.use(express.json())
+app.use(bodyParser.urlencoded({ extended: true }))
 
 //definimos una ruta inicial solo para testear el funcionamiento de la API
 app.get('/api', (req, res) => {
@@ -21,7 +26,7 @@ app.post('/api/login', (req, res) => {
         email: 'user01@mail.com'
     }
 
-    jwt.sign({ user: user }, 'secretkey', {expiresIn: '1d'}, (err, token) => {
+    jwt.sign({ user: user }, 'secretkey', { expiresIn: '1d' }, (err, token) => {
         res.json({
             token: token
         })
@@ -32,15 +37,21 @@ app.post('/api/login', (req, res) => {
 
 //si el jwt es correcto el usuario puede acceder a la ruta para crear posts
 app.post('/api/post', verifyToken, (req, res) => {
+    const apiKey = '1A6jPSfxQ0Eu4dsgM7m26DUMxo9tEa3p'
+    const address = req.body.address
+    const urlApiTomTom = `https://api.tomtom.com/search/2/search/${address}.json?lat=37.337&lon=-121.89&key=${apiKey}`
     jwt.verify(req.token, 'secretkey', (err, authData) => {
         if (err) {
             res.sendStatus(403)
         } else {
-            res.json({
-                mensaje: 'Post fue creado',
-                authData: authData
-            })
+            fetch(urlApiTomTom)
+                .then(response => response.json())
+                .then(data => {
+                    res.json(data)
+                })
+                .catch(error => console.log(error))
         }
+
     })
 })
 
@@ -57,6 +68,7 @@ function verifyToken(req, res, next) {
         res.sendStatus(403)
     }
 }
+
 
 
 
